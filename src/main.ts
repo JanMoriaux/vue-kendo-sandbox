@@ -1,10 +1,4 @@
-// @ts-nocheck
-//jquery --> necessary for typing
-//import jquery from "jquery";
-
-// import "bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "@progress/kendo-ui"
+import "@progress/kendo-theme-default/dist/all.css";
 
 import { createApp } from "vue";
 import App from "./App.vue";
