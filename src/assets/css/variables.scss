@@ -1,0 +1,90 @@
+// Compatible with @progress/kendo-theme-default v.5.8.0
+$tb-kendo-border-radius: 5px;
+$tb-dark-theme: false;
+$tb-primary: #b61a1d;
+$tb-secondary: #63201a;
+$tb-info: #263464;
+$tb-success: #86af59;
+$tb-warning: #eea631;
+$tb-error: #841f1c;
+$tb-body-bg: #f6f6f6;
+$tb-body-text: #333333;
+$tb-heading-text: #222222;
+$tb-subtle-text: #585858;
+$tb-disabled-text: #8f8f8f;
+$tb-component-bg: $tb-body-bg;
+$tb-component-text: $tb-body-text;
+$tb-base-bg: #ececec;
+$tb-base-text: $tb-body-text;
+$tb-hovered-bg: #f0f0f0;
+$tb-hovered-text: #63201a;
+$tb-selected-bg: #841f1c;
+$tb-selected-text: #f6f6f6;
+$tb-kendo-button-bg: #f5f5f5;
+$tb-kendo-button-text: #333333;
+$tb-link-text: $tb-primary;
+$tb-link-hover-text: #63201a;
+$tb-series-a: #b61a1d;
+$tb-series-b: #eea631;
+$tb-series-c: #86af59;
+$tb-series-d: #348c8f;
+$tb-series-e: #263464;
+$tb-series-f: #aa46be;
+
+$kendo-border-radius: $tb-kendo-border-radius;
+$dark-theme: $tb-dark-theme;
+$primary: $tb-primary;
+$accent: $tb-primary;
+$secondary: $tb-secondary;
+$info: $tb-info;
+$success: $tb-success;
+$warning: $tb-warning;
+$error: $tb-error;
+$body-bg: $tb-body-bg;
+$body-text: $tb-body-text;
+$heading-text: $tb-heading-text;
+$subtle-text: $tb-subtle-text;
+$disabled-text: $tb-disabled-text;
+$component-bg: $tb-component-bg;
+$component-text: $tb-component-text;
+$base-bg: $tb-base-bg;
+$base-text: $tb-base-text;
+$hovered-bg: $tb-hovered-bg;
+$hovered-text: $tb-hovered-text;
+$selected-bg: $tb-selected-bg;
+$selected-text: $tb-selected-text;
+$kendo-button-bg: $tb-kendo-button-bg;
+$kendo-button-text: $tb-kendo-button-text;
+$link-text: $tb-link-text;
+$link-hover-text: $tb-link-hover-text;
+$series-a: $tb-series-a;
+$series-b: $tb-series-b;
+$series-c: $tb-series-c;
+$series-d: $tb-series-d;
+$series-e: $tb-series-e;
+$series-f: $tb-series-f;
+$font-family: inherit;
+$font-size: 14px;
+$font-weight-normal: 400;
+$line-height: 1.4285714286;
+
+$enable-gradients: true;
+
+$tb-typography: (
+  default-typography: (
+    font-family: "inherit",
+    font-size: 14px,
+    font-weight: 400,
+    line-height: 1.4285714286
+  )
+);
+
+@mixin typography-classes($typography) {
+  @each $selector, $property in $typography {
+    &-#{$selector} {
+      @each $propName, $propValue in $property {
+        #{$propName}: $propValue;
+      }
+    }
+  }
+}
