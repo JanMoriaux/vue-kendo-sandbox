@@ -1,6 +1,6 @@
 <template>
   <grid
-    :style="{ height: '558px', width: '601px' }"
+    :style="{ height: '558px', width: '603px' }"
     :data-items="products"
     :reorderable="true"
     @columnreorder="columnReorder"
